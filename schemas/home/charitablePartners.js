@@ -1,5 +1,5 @@
 ﻿// schemas/home/charitablePartners.js
-import image from '../image'
+import image from '../blocks/image'
 
 export default {
   name: 'charitablePartners',

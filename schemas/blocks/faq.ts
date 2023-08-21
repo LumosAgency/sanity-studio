@@ -1,6 +1,7 @@
 ﻿// schemas/faq.js
 import {UnknownIcon} from '@sanity/icons'
 import blockContent from './blockContent'
+import image from './image'
 
 export default {
   name: 'FAQ',
@@ -8,11 +9,6 @@ export default {
   title: 'FAQ',
   icon: UnknownIcon,
   fields: [
-    {
-      name: 'faqOrder',
-      type: 'number',
-      title: 'Ordering',
-    },
     {
       name: 'faqTitle',
       type: 'string',
@@ -22,7 +18,7 @@ export default {
       title: 'Content',
       name: 'faqContent',
       type: 'array',
-      of: [blockContent],
+      of: [blockContent, image],
     },
   ],
 }

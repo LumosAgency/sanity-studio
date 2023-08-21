@@ -1,5 +1,13 @@
 ﻿// ./deskStructure.js
-import {EarthGlobeIcon, HomeIcon} from '@sanity/icons'
+import {
+  BillIcon,
+  CaseIcon,
+  EarthGlobeIcon,
+  HomeIcon,
+  LockIcon,
+  PinIcon,
+  UnknownIcon,
+} from '@sanity/icons'
 const pageMap = [
   {
     id: 'siteSettings', // must match the name of the scheme file name
@@ -8,14 +16,39 @@ const pageMap = [
   },
   {
     id: 'homePage',
-    title: 'Home Page',
+    title: 'Home',
     icon: HomeIcon,
+  },
+  {
+    id: 'about',
+    title: 'About',
+    icon: BillIcon,
+  },
+  {
+    id: 'coverageArea',
+    title: 'Coverage Area',
+    icon: PinIcon,
+  },
+  {
+    id: 'faqs',
+    title: 'FAQs',
+    icon: UnknownIcon,
+  },
+  {
+    id: 'partner',
+    title: 'Partner',
+    icon: CaseIcon,
+  },
+  {
+    id: 'privacy',
+    title: 'Privacy Policy',
+    icon: LockIcon,
   },
 ]
 
 export const myStructure = (S, context) =>
   S.list()
-    .title('Base')
+    .title('Energi Antelope')
     .items(
       pageMap
         .map((page) =>

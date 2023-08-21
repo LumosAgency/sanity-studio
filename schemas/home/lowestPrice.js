@@ -1,5 +1,5 @@
 ﻿// schemas/home/lowestPrice.js
-import blockContent from '../blockContent'
+import blockContent from '../blocks/blockContent'
 
 export default {
   name: 'lowestPriceCards',
@@ -7,7 +7,7 @@ export default {
   title: 'Lowest Price Section',
   options: {
     collapsible: true,
-    collapsed: false,
+    collapsed: true,
     columns: 1,
   },
   fields: [

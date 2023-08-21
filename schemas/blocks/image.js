@@ -1,4 +1,4 @@
-﻿// schemas/blockContent.js
+﻿// schemas/image.js
 export default {
   name: 'image',
   type: 'image',
