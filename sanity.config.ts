@@ -1,3 +1,4 @@
+import {table} from '@sanity/table'
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
@@ -12,6 +13,7 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
+    table(),
     deskTool({
       structure: myStructure,
     }),

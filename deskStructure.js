@@ -4,6 +4,7 @@ import {
   CaseIcon,
   EarthGlobeIcon,
   HomeIcon,
+  LaunchIcon,
   LockIcon,
   PinIcon,
   UnknownIcon,
@@ -35,6 +36,11 @@ const pageMap = [
     icon: UnknownIcon,
   },
   {
+    id: 'resources',
+    title: 'Resources',
+    icon: LaunchIcon,
+  },
+  {
     id: 'partner',
     title: 'Partner',
     icon: CaseIcon,
@@ -59,7 +65,9 @@ export const myStructure = (S, context) =>
         )
         .concat(
           S.documentTypeListItems().filter(
-            (listItem) => !pageMap.some((page) => page.id === listItem.getId())
+            (listItem) =>
+              !pageMap.some((page) => page.id === listItem.getId()) &&
+              listItem.getId() !== 'resourcePages' // Exclude resourcePages from the list
           )
         )
     )
