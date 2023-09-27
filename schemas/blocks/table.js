@@ -1,6 +1,6 @@
 ﻿// schemas/table.js
 export default {
-  name: 'table',
+  name: 'tableField',
   type: 'object',
   title: 'Table',
   fields: [

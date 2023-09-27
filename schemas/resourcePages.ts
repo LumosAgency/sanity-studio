@@ -1,9 +1,9 @@
 ﻿// schemas/resourcePages.ts
+import accordion from './blocks/accordion'
 import blockContent from './blocks/blockContent'
-import faq from './blocks/faq'
 import image from './blocks/image'
 import quote from './blocks/quote'
-import table from './blocks/table'
+import tableField from './blocks/table'
 import textContent from './blocks/textContent'
 export default {
   name: 'resourcePages',
@@ -29,7 +29,7 @@ export default {
       title: 'Content Section',
       name: 'resourcesPages',
       type: 'array',
-      of: [blockContent, image, textContent, quote, faq, table],
+      of: [blockContent, image, textContent, quote, accordion, tableField],
     },
   ],
   preview: {

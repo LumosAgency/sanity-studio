@@ -1,6 +1,6 @@
 ﻿// schemas/faq.js
+import accordion from './blocks/accordion'
 import blockContent from './blocks/blockContent'
-import faq from './blocks/faq'
 import image from './blocks/image'
 
 export default {
@@ -24,10 +24,8 @@ export default {
       title: 'FAQ Intro Text',
     },
     {
-      title: 'Content',
+      ...accordion,
       name: 'faqContent',
-      type: 'array',
-      of: [faq],
     },
   ],
 }
