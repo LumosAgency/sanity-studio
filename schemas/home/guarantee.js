@@ -1,7 +1,7 @@
 ﻿// schemas/home/lowestPrice.js
 import blockContent from '../blocks/blockContent'
+import card from '../blocks/card'
 import image from '../blocks/image'
-import textContent from '../blocks/textContent'
 
 export default {
   name: 'guarantee',
@@ -23,7 +23,7 @@ export default {
       title: 'Star Items',
       name: 'starItems', // Change the field name
       type: 'array', // Change the field type to array
-      of: [blockContent],
+      of: [card],
     },
     {
       ...image,
