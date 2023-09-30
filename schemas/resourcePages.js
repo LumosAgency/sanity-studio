@@ -5,10 +5,11 @@ import image from './blocks/image'
 import quote from './blocks/quote'
 import tableField from './blocks/table'
 import textContent from './blocks/textContent'
+
 export default {
   name: 'resourcePages',
   type: 'document', // change this to 'object'
-  title: 'Resource Page',
+  title: 'Resource Pages',
   fields: [
     {
       ...image,
@@ -19,6 +20,7 @@ export default {
       name: 'resourcesTitle',
       type: 'string',
       title: 'Title',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'resourcesIntro',

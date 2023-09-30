@@ -65,9 +65,7 @@ export const myStructure = (S, context) =>
         )
         .concat(
           S.documentTypeListItems().filter(
-            (listItem) =>
-              !pageMap.some((page) => page.id === listItem.getId()) &&
-              listItem.getId() !== 'resourcePages' // Exclude resourcePages from the list
+            (listItem) => !pageMap.some((page) => page.id === listItem.getId())
           )
         )
     )
