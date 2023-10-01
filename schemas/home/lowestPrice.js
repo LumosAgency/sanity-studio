@@ -1,5 +1,6 @@
 ﻿// schemas/home/lowestPrice.js
 import card from '../blocks/card'
+import image from '../blocks/image'
 
 export default {
   name: 'lowestPriceCards',
@@ -17,6 +18,11 @@ export default {
       name: 'starItems', // Change the field name
       type: 'array', // Change the field type to array
       of: [card],
+    },
+    {
+      ...image,
+      title: 'Below Content Image',
+      name: 'lowestPriceBelowImage',
     },
   ],
 }

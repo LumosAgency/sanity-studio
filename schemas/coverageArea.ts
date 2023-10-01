@@ -1,8 +1,9 @@
 ﻿// schemas/coverage.js
 import {BillIcon} from '@sanity/icons'
+import accordion from './blocks/accordion'
 import blockContent from './blocks/blockContent'
 import image from './blocks/image'
-import textContent from './blocks/textContent'
+import quote from './blocks/quote'
 
 export default {
   name: 'coverageArea',
@@ -29,7 +30,7 @@ export default {
       title: 'Content',
       name: 'coverageContent',
       type: 'array',
-      of: [blockContent, image, textContent],
+      of: [blockContent, image, quote, accordion],
     },
   ],
 }
