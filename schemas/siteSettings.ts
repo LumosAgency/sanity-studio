@@ -1,34 +1,12 @@
 ﻿// schemas/siteSettings.ts
+import alertBar from './global/alertBar'
+import calculator from './global/calculator'
+import siteLogo from './global/siteLogo'
+
 export default {
   name: 'siteSettings',
-  title: 'Site Settings',
+  title: 'Glboal Site Settings',
   type: 'document',
-  fields: [
-    {
-      name: 'alertBar',
-      title: 'Alertbar Text',
-      type: 'array',
-      of: [
-        {
-          type: 'block',
-          marks: {
-            annotations: [
-              {
-                name: 'link',
-                type: 'object',
-                title: 'link',
-                fields: [
-                  {
-                    name: 'href',
-                    type: 'url',
-                    title: 'URL',
-                  },
-                ],
-              },
-            ],
-          },
-        },
-      ],
-    },
-  ],
+  fields: [siteLogo, alertBar, calculator],
 }
+
