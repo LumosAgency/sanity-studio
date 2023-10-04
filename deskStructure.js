@@ -2,6 +2,7 @@
 import {
   BillIcon,
   CaseIcon,
+  DocumentWordIcon,
   EarthGlobeIcon,
   HomeIcon,
   LaunchIcon,
