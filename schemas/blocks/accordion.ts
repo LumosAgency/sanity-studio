@@ -26,5 +26,15 @@ export default {
     select: {
       title: 'accordionTitle',
     },
+    prepare(selection) {
+      const {title} = selection
+      let fallbackText
+      if (!title) {
+        fallbackText = 'Accordion'
+      }
+      return {
+        title: title || fallbackText,
+      }
+    },
   },
 }

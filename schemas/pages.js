@@ -19,7 +19,7 @@ export default {
       title: 'Page Icon',
     },
     {
-      name: 'pageTitle',
+      name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule) => Rule.required(),
@@ -35,10 +35,15 @@ export default {
       type: 'array',
       of: [blockContent, image, textContent, quote, accordion, tableField],
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+    },
   ],
   preview: {
     select: {
-      title: 'pageTitle',
+      title: 'title',
       iconRef: 'pageImage.asset', // This is the key update
     },
     prepare(selection) {

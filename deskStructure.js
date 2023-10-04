@@ -22,34 +22,9 @@ const pageMap = [
     icon: HomeIcon,
   },
   {
-    id: 'about',
-    title: 'About',
-    icon: BillIcon,
-  },
-  {
-    id: 'coverageArea',
-    title: 'Coverage Area',
-    icon: PinIcon,
-  },
-  {
-    id: 'faqs',
-    title: 'FAQs',
-    icon: UnknownIcon,
-  },
-  {
     id: 'resources',
-    title: 'Resources',
+    title: 'Resources Menu',
     icon: LaunchIcon,
-  },
-  {
-    id: 'partner',
-    title: 'Partner',
-    icon: CaseIcon,
-  },
-  {
-    id: 'privacy',
-    title: 'Privacy Policy',
-    icon: LockIcon,
   },
 ]
 

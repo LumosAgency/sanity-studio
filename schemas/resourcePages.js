@@ -17,7 +17,7 @@ export default {
       title: 'Resource Icon',
     },
     {
-      name: 'resourcesTitle',
+      name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule) => Rule.required(),
@@ -33,10 +33,16 @@ export default {
       type: 'array',
       of: [blockContent, image, textContent, quote, accordion, tableField],
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      hidden: true,
+    },
   ],
   preview: {
     select: {
-      title: 'resourcesTitle',
+      title: 'title',
     },
   },
 }
