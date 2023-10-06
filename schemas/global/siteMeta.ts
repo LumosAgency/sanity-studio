@@ -1,4 +1,5 @@
-﻿export default {
+﻿import image from '../blocks/image'
+export default {
   type: 'document',
   name: 'siteMeta',
   title: 'Site Configuration',
@@ -9,9 +10,8 @@
       title: 'Page Title',
       name: 'ogTitle',
       description:
-        'Set the title Open Graph should use. In most situations, this should be different from the value of the title prop',
+        'Set the title Open Graph should use if you want a different SEO title than the document title. If a title is not chosen, the document title will be used.',
       validation: (Rule: Rule) => Rule.required(),
-      // fieldset: "basic"
     },
     {
       type: 'text',
@@ -19,9 +19,10 @@
       title: 'Social Share Description',
     },
     {
-      type: 'text',
-      name: 'description',
-      title: 'Describe This Site',
+      ...image,
+      name: 'ogImage',
+      description:
+        'URL of the image that should be used in social media previews. If not chosen, the sites Default Social Media Image will be used.',
     },
   ],
   options: {

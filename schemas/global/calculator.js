@@ -8,11 +8,6 @@ export default {
   name: 'globalCalculator',
   type: 'object',
   title: 'Calculator Fields',
-  options: {
-    collapsible: true,
-    collapsed: true,
-    columns: 1,
-  },
   fields: [
     {
       name: 'dividerText',

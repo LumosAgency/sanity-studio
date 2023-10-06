@@ -3,12 +3,12 @@ export default {
   name: 'globalAlertBar',
   type: 'object',
   title: 'Alert Bar',
-  options: {
-    collapsible: true,
-    collapsed: true,
-    columns: 1,
-  },
   fields: [
+    {
+      name: 'alertBarEnabled',
+      title: 'Enable Alertbar',
+      type: 'boolean',
+    },
     {
       name: 'alertBar',
       title: 'Alertbar Text',
