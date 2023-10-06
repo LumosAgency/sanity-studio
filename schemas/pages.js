@@ -6,34 +6,51 @@ import image from './blocks/image'
 import quote from './blocks/quote'
 import tableField from './blocks/table'
 import textContent from './blocks/textContent'
+import siteMeta from './global/siteMeta'
 
 export default {
   name: 'pages',
   type: 'document', // change this to 'object'
   title: 'Pages',
   icon: DocumentWordIcon,
+  groups: [
+    {
+      name: 'meta',
+      title: 'Page Meta',
+    },
+    {
+      name: 'content',
+      title: 'Content',
+      default: true,
+    },
+  ],
   fields: [
+    {...siteMeta, title: 'Meta Data', group: ['meta']},
     {
       ...image,
       name: 'pageImage',
       title: 'Page Icon',
+      group: ['content'],
     },
     {
       name: 'title',
       type: 'string',
       title: 'Title',
       validation: (Rule) => Rule.required(),
+      group: ['content'],
     },
     {
       name: 'pageIntro',
       title: 'Intro Text',
       type: 'text',
+      group: ['content'],
     },
     {
       title: 'Content',
       name: 'pageContent',
       type: 'array',
       of: [blockContent, image, textContent, quote, accordion, tableField],
+      group: ['content'],
     },
     {
       name: 'slug',
