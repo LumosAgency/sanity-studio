@@ -4,6 +4,7 @@ import address from './calculator/address'
 import bill from './calculator/bill'
 import email from './calculator/email'
 import name from './calculator/name'
+import start from './calculator/start'
 export default {
   name: 'globalCalculator',
   type: 'object',
@@ -23,6 +24,7 @@ export default {
         input: DividerText,
       },
     },
+    start,
     name,
     bill,
     address,
