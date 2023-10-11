@@ -2,6 +2,7 @@
 import {DocumentWordIcon} from '@sanity/icons'
 import accordion from './blocks/accordion'
 import blockContent from './blocks/blockContent'
+import divider from './blocks/divider'
 import image from './blocks/image'
 import quote from './blocks/quote'
 import tableField from './blocks/table'
@@ -49,7 +50,7 @@ export default {
       title: 'Content',
       name: 'pageContent',
       type: 'array',
-      of: [blockContent, image, textContent, quote, accordion, tableField],
+      of: [blockContent, image, textContent, quote, accordion, tableField, divider],
       group: ['content'],
     },
     {
