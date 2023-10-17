@@ -12,5 +12,15 @@ export default {
       type: 'string',
       title: 'Alternative text',
     },
+    {
+      name: 'width',
+      description: 'Width of image in PX',
+      type: 'number',
+    },
+    {
+      name: 'height',
+      description: 'Height of image in PX',
+      type: 'number',
+    },
   ],
 }
