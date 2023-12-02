@@ -21,8 +21,8 @@ export default {
     },
     {
       title: 'Star Items',
-      name: 'starItems', // Change the field name
-      type: 'array', // Change the field type to array
+      name: 'starItems',
+      type: 'array',
       of: [card],
     },
     {

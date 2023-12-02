@@ -21,7 +21,7 @@ export default {
     {
       title: 'Competitor',
       name: 'competitor',
-      type: 'object', // Use "object" type for nested collapsible sections
+      type: 'object',
       options: {
         collapsible: true,
         collapsed: true,
@@ -40,7 +40,7 @@ export default {
     {
       title: 'Energi Antelope',
       name: 'energiAntelope',
-      type: 'object', // Use "object" type for nested collapsible sections
+      type: 'object',
       options: {
         collapsible: true,
         collapsed: true,

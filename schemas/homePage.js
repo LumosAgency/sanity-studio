@@ -6,6 +6,7 @@ import comparison from './home/comparison'
 import guarantee from './home/guarantee'
 import hero from './home/hero'
 import lowestPrice from './home/lowestPrice'
+import partners from './home/partners'
 export default {
   name: 'homePage',
   title: 'Home Page',
@@ -24,6 +25,7 @@ export default {
   fields: [
     {...siteMeta, title: 'Homepage SEO', group: ['meta']},
     {...hero, group: ['content']},
+    {...partners, group: ['content']},
     {...charitablePartners, group: ['content']},
     {...lowestPrice, group: ['content']},
     {...comparison, group: ['content']},
