@@ -7,6 +7,7 @@ import guarantee from './home/guarantee'
 import hero from './home/hero'
 import lowestPrice from './home/lowestPrice'
 import partners from './home/partners'
+import testimonials from './home/testimonials'
 export default {
   name: 'homePage',
   title: 'Home Page',
@@ -30,6 +31,7 @@ export default {
     {...lowestPrice, group: ['content']},
     {...comparison, group: ['content']},
     {...guarantee, group: ['content']},
+    {...testimonials, group: ['content']},
     {...charityInfo, group: ['content']},
   ],
 }
