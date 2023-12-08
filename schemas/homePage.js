@@ -26,12 +26,17 @@ export default {
   fields: [
     {...siteMeta, title: 'Homepage SEO', group: ['meta']},
     {...hero, group: ['content']},
-    {...partners, group: ['content']},
     {...charitablePartners, group: ['content']},
+    {...partners, group: ['content']},
     {...lowestPrice, group: ['content']},
     {...comparison, group: ['content']},
     {...guarantee, group: ['content']},
     {...testimonials, group: ['content']},
     {...charityInfo, group: ['content']},
   ],
+  preview: {
+    prepare: () => ({
+      title: 'Home Page',
+    }),
+  },
 }

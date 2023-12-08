@@ -1,6 +1,7 @@
 ﻿// schemas/siteSettings.ts
 import alertBar from './global/alertBar'
 import calculator from './global/calculator'
+import social from './global/social'
 
 import image from './blocks/image'
 export default {
@@ -14,6 +15,10 @@ export default {
       default: true,
     },
     {
+      name: 'social',
+      title: 'Social Media',
+    },
+    {
       name: 'alert',
       title: 'Alert Bar',
     },
@@ -25,6 +30,7 @@ export default {
   fields: [
     {...alertBar, group: ['alert']},
     {...calculator, group: ['calculator']},
+    {...social, group: ['social']},
     {
       type: 'text',
       name: 'ogDefaultDescription',
@@ -39,4 +45,9 @@ export default {
       group: ['meta'],
     },
   ],
+  preview: {
+    prepare: () => ({
+      title: 'Site Settings',
+    }),
+  },
 }

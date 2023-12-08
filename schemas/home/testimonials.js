@@ -16,7 +16,7 @@ export default {
     {
       ...blockContent,
       name: 'testimonialsIntro',
-      title: 'testimonials Section Intro Text',
+      title: 'Testimonials Section Intro Text',
     },
     {
       title: 'Testimonials',

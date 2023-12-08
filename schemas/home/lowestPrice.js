@@ -1,4 +1,5 @@
 ﻿// schemas/home/lowestPrice.js
+import blockContent from '../blocks/blockContent'
 import card from '../blocks/card'
 import image from '../blocks/image'
 
@@ -13,6 +14,11 @@ export default {
   },
   fields: [
     {name: 'lowestPriceCardTitle', type: 'string', title: 'Section Title'},
+    {
+      ...blockContent,
+      name: 'lowestPriceCardSubtitle',
+      title: 'Section Content',
+    },
     {
       title: 'Star Items',
       name: 'starItems', // Change the field name

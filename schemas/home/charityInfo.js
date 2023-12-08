@@ -20,6 +20,11 @@ export default {
     {name: 'charityInfoTitle', type: 'string', title: 'Charity Section Title'},
     {
       ...blockContent,
+      name: 'charityInfoSubtitle',
+      title: 'Charity Section Subtitle',
+    },
+    {
+      ...blockContent,
       name: 'charityInfoIntro',
       title: 'Charity Section Content',
     },
