@@ -12,16 +12,16 @@ export default {
     columns: 1,
   },
   fields: [
-    {
-      ...image,
-      name: 'charityInfoImage',
-      title: 'Charity Section Image',
-    },
     {name: 'charityInfoTitle', type: 'string', title: 'Charity Section Title'},
     {
       ...blockContent,
       name: 'charityInfoSubtitle',
       title: 'Charity Section Subtitle',
+    },
+    {
+      ...image,
+      name: 'charityInfoImage',
+      title: 'Charity Section Image',
     },
     {
       ...blockContent,

@@ -1,4 +1,5 @@
 ﻿// schemas/home/charitablePartners.js
+import blockContent from '../blocks/blockContent'
 import image from '../blocks/image'
 
 export default {
@@ -15,6 +16,11 @@ export default {
       name: 'charitablePartnersTitle',
       title: 'Charitible Partners Title',
       type: 'string',
+    },
+    {
+      ...blockContent,
+      name: 'charitablePartnersSubtitle',
+      title: 'Charitible Partners Subtitle',
     },
     {
       ...image,

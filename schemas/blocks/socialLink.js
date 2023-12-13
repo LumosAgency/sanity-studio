@@ -17,4 +17,17 @@ export default {
       description: 'Source on the web',
     },
   ],
+  preview: {
+    select: {
+      title: 'icon.alt',
+      iconRef: 'icon.asset', // This is the key update
+    },
+    prepare(selection) {
+      const {title, iconRef} = selection
+      return {
+        title: title,
+        media: iconRef,
+      }
+    },
+  },
 }
