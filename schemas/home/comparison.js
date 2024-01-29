@@ -35,6 +35,7 @@ export default {
           of: [textContent],
         },
         {name: 'price', type: 'string', title: 'Price'},
+        {name: 'disclaimer', type: 'string', title: 'Disclaimer'},
       ],
     },
     {
