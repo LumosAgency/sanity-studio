@@ -4,6 +4,7 @@ import address from './calculator/address'
 import bill from './calculator/bill'
 import email from './calculator/email'
 import name from './calculator/name'
+import phone from './calculator/phone'
 import start from './calculator/start'
 export default {
   name: 'globalCalculator',
@@ -29,5 +30,6 @@ export default {
     bill,
     address,
     email,
+    phone,
   ],
 }

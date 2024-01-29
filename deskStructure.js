@@ -1,18 +1,8 @@
 ﻿// ./deskStructure.js
-import {
-  BillIcon,
-  CaseIcon,
-  DocumentWordIcon,
-  EarthGlobeIcon,
-  HomeIcon,
-  LaunchIcon,
-  LockIcon,
-  PinIcon,
-  UnknownIcon,
-} from '@sanity/icons'
+import {EarthGlobeIcon, HomeIcon, LaunchIcon} from '@sanity/icons'
 const pageMap = [
   {
-    id: 'siteSettings', // must match the name of the scheme file name
+    id: 'siteSettings',
     title: 'Site Settings',
     icon: EarthGlobeIcon,
   },
